@@ -185,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .get-started-btn:hover {
-  background: #00b371;
+  background: #f4ca66;
   color: #fff;
 }
 .nav-link:focus {
@@ -776,7 +776,7 @@ section {
 }
 
 .cta .cta-btn:hover {
-  background: #00b371;
+  background: #f4ca66;
 }
 
 @media (max-width: 1024px) {
@@ -944,7 +944,14 @@ section {
     background-attachment: fixed;
   }
 }
-
+#video {
+/*   -webkit-border-top-right-radius: 38px;
+-webkit-border-bottom-left-radius: 38px;
+-moz-border-radius-topright: 38px;
+-moz-border-radius-bottomleft: 38px;
+border-top-right-radius: 38px;
+border-bottom-left-radius: 38px; */
+}
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
@@ -1208,8 +1215,8 @@ section {
 }
 
 .pricing .recommended .btn-buy:hover {
-  background: #00b371;
-  border-color: #00b371;
+  background: #f4ca66;
+  border-color: #f4ca66;
 }
 
 .pricing .recommended-badge {
@@ -1458,7 +1465,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #00b371;
+  background: #f4ca66;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1568,7 +1575,7 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: #00b371;
+  background: #f4ca66;
   color: #fff;
   text-decoration: none;
 }
@@ -1582,7 +1589,7 @@ section {
 }
 
 #footer .credits a {
-  color: #00b371;
+  color: #f4ca66;
   transition: 0.3s;
 }
 
