@@ -1704,3 +1704,13 @@ border-bottom-left-radius: 38px; */
     width: 50%!important;
   }
 }
+
+.opinions {
+  width: 60%!important;
+}
+
+@media (max-width: 400px) {
+  .opinions {
+    width: 100%!important;
+  }
+}
