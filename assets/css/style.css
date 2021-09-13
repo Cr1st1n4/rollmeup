@@ -1714,3 +1714,9 @@ border-bottom-left-radius: 38px; */
     width: 100%!important;
   }
 }
+
+@media (max-width: 427px) {
+  #aboutusphoto {
+    height: 500px!important;
+  }
+}
