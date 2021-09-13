@@ -196,7 +196,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .get-started-btn:hover {
-  background: #EFD0BC;
+  background: #e6b595;
+  transition: 0.3s;
   color: #fff;
 }
 .nav-link:focus {
@@ -635,7 +636,7 @@ section {
 
 .section-title p {
   margin-bottom: 0;
-  color: #777777;
+  /* color: #777777; */
   font-size: 15px;
 }
 
@@ -1363,46 +1364,105 @@ border-bottom-left-radius: 38px; */
 }
 
 /*--------------------------------------------------------------
+# Swiper
+--------------------------------------------------------------*/
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact .info-wrap {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
 .contact .info {
-  width: 100%;
   background: #fff;
 }
 
 .contact .info i {
-  font-size: 32px;
+  font-size: 20px;
   color: #cf8062;
   float: left;
-  line-height: 1;
+  width: 44px;
+  height: 44px;
+  background: #fff6e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
 }
 
 .contact .info h4 {
   padding: 0 0 0 60px;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #282828;
+  color: #433f39;
+  font-family: "Poppins", sans-serif;
 }
 
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #5b5b5b;
+  color: #7a7368;
 }
 
-.contact .info .email, .contact .info .phone {
-  margin-top: 40px;
+.contact .info:hover i {
+  background: #cf8062;
+  color: #fff;
 }
 
 .contact .php-email-form {
   width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  padding: 30px;
   background: #fff;
 }
 
 .contact .php-email-form .form-group {
   padding-bottom: 8px;
+}
+
+.contact .php-email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
 }
 
 .contact .php-email-form .error-message {
@@ -1418,13 +1478,9 @@ border-bottom-left-radius: 38px; */
   display: none;
   color: #fff;
   background: #18d26e;
-  text-align: left;
+  text-align: center;
   padding: 15px;
   font-weight: 600;
-}
-
-.contact .php-email-form .sent-message br + br {
-  margin-top: 25px;
 }
 
 .contact .php-email-form .loading {
@@ -1451,11 +1507,6 @@ border-bottom-left-radius: 38px; */
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
-  border-radius: 4px;
-}
-
-.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-  border-color: #cf8062;
 }
 
 .contact .php-email-form input {
@@ -1467,16 +1518,34 @@ border-bottom-left-radius: 38px; */
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #cf8062;
+  background: #ffb03b;
   border: 0;
-  padding: 10px 30px;
+  padding: 10px 24px;
   color: #fff;
   transition: 0.4s;
   border-radius: 50px;
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #EFD0BC;
+  background: #ffa012;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @-webkit-keyframes animate-loading {
@@ -1606,4 +1675,32 @@ border-bottom-left-radius: 38px; */
 
 #footer .credits a:hover {
   color: #cf8062;
+}
+
+/* Carousel */
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 18px;
+  font-weight: lighter;
+  text-align: left;
+}
+
+.comillas {
+  color: #CF8062;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.stars {
+  color: #fcef3d;
+}
+
+@media (max-width: 384px) {
+  .pricerwd {
+    width: 50%!important;
+  }
 }
